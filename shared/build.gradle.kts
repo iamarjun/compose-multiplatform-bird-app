@@ -39,6 +39,8 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
                 implementation("io.ktor:ktor-client-content-negotiation:2.3.3")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.3")
+                api("dev.icerock.moko:mvvm-core:0.16.1")
+                api("dev.icerock.moko:mvvm-compose:0.16.1")
             }
         }
         val androidMain by getting {
