@@ -1,10 +1,10 @@
 package usecases
 
 import model.Bird
-import network.BirdApi
+import network.BirdApiImp
 
 class GetBirdList(
-    private val birdApi: BirdApi
+    private val birdApi: BirdApiImp
 ) {
     suspend operator fun invoke(): Result<List<Bird>> {
         return try {
